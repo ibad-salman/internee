@@ -1,0 +1,590 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>internee.pk</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="https://www.internee.pk/assets/icon-BT8woF2N.jpg" type="image/x-icon">
+    <style type="text/tailwindcss">
+      theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+  </head>
+  <body>
+   <header class="text-gray-600 body-font bg-gray-100">
+  <div class="container mx-auto flex items-center justify-between p-5">
+    <img src="img/internee image.jpg" alt="internee" class="h-12 w-auto" />
+    
+
+    <div class="flex items-center space-x-6">
+      <nav class="flex space-x-6 text-base font-bold">
+        <a class="hover:text-green-500">Home</a>
+        <a class="hover:text-green-500">Internship</a>
+        <a class="hover:text-green-500">Graduate Program</a>
+        <a class="hover:text-green-500">Company Collaboration</a>
+        <a class="hover:text-green-500">Contact</a>
+      </nav>
+      <button class="border border-green-500 bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 text-base font-bold">
+        Job Portal
+      </button>
+      <button class="border border-green-500 bg-white text-green-500 px-6 py-2 rounded-full hover:bg-green-500 hover:text-white text-base font-bold">
+        Internee's Login
+      </button>
+    </div>
+  </div>
+  <!-- 2nd page  -->
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+       <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col items-center text-center">
+        <h1 class="title-font sm:text-5xl text-3xl mb-4 font-medium text-gray-900">
+          Looking for dream internship?
+        </h1>
+        <h1 id="changing-text" class="text-4xl sm:text-5xl font-bold text-green-500"></h1>
+        <script>
+          const texts = ["Market Competitive Salary|", "Gain Hands On Experience|", "On Your Desired Domain.|"];
+          let index = 0;
+          let charIndex = 0;
+          let currentText = "";
+          let isDeleting = false;
+          const textElement = document.getElementById("changing-text");
+        
+          function typeEffect() {
+            if (!isDeleting) {
+              currentText = texts[index].substring(0, charIndex + 1);
+              charIndex++;
+              textElement.textContent = currentText; // Update text here
+              if (charIndex === texts[index].length) {
+                isDeleting = true;
+                setTimeout(typeEffect, 2000); // Pause before deleting
+                return;
+              }
+            } else {
+              currentText = texts[index].substring(0, charIndex - 1);
+              charIndex--;
+              textElement.textContent = currentText; // Update text here
+              if (charIndex === 0) {
+                isDeleting = false;
+                index = (index + 1) % texts.length;
+              }
+            }
+            setTimeout(typeEffect, isDeleting ? 50 : 100);
+          }
+        
+          typeEffect();
+        </script>
+        <br>
+        <p class="mb-8 leading-relaxed">
+          Internee.pk kickstart student's tech careers with first internships, providing industry exposure, 
+          practical skills, and networking opportunities, paving the way for their success in the tech industry.
+        </p>
+        <div class="flex justify-center">
+          <button class="inline-flex text-white bg-green-500 border-0 py-2 px-6 rounded-full focus:outline-none hover:bg-green-600 text-lg font-bold">
+            Job Portal
+          </button>
+          <button class="ml-4 inline-flex text-green-700 bg-gray-100 border border-green-500 py-2 px-6 rounded-full focus:outline-none hover:bg-green-500 hover:text-white text-lg font-bold">
+            Our LMS
+          </button>
+        </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex justify-center">
+        <img class="object-cover object-center rounded-lg w-96 h-96 md:w-[450px] md:h-[450px] lg:w-[500px] lg:h-[500px]" 
+            alt="hero" 
+            src="https://www.internee.pk/LMS%20video.gif">
+    </div>
+      </div>
+  </section>
+  
+      </div>
+    </div>
+  </section>
+</header>
+    </button>
+  </div>
+</header>
+    </h1>
+    <h1 class="text-4xl sm:text-5xl font-bold text-center">Trusted By The Tech Giants</h1>
+    <br><br>
+    <div class="flex justify-center space-x-8">
+      <img src="img/google img.png" alt="google" class="h-16 w-auto">
+      <img src="img/salyani img.png" alt="saylani" class="h-16 w-auto">
+      <img src="img/Microsoft img.png" alt="microsoft" class="h-16 w-auto">
+      <img src="img/zindagi img.png" alt="js bank" class="h-16 w-auto">
+  </div>
+  <br><br><br><br>
+  <div class="flex justify-center">
+    <img class="h-16 w-auto" src="https://www.internee.pk/assets/icon-BT8woF2N.jpg" alt="">
+</div> 
+<h1 class="text-center text-5xl">What is internee.pk?</h1>
+<br><br>
+<div class="flex justify-center">
+  <p class="mb-8 leading-relaxed text-center w-3/4">
+      The ultimate platform designed to turbocharge the IT sector in Pakistan! We recognize the immense potential of talented individuals in the country and aim to bridge the gap between them and the thriving IT industry. Internee.pk offers a comprehensive range of virtual internship opportunities exclusively in the IT field.
+  </p>
+  <!-- 3rd page -->
+</div>
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="https://miro.medium.com/v2/resize:fit:1400/1*KnV1cBSw-kWyh7Y6XEEzrA.jpeg">
+        </div>
+        <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Backend Development</h2>
+        <button class="flex mx-auto mt-6 text-white bg-green-500 border-0 py-2 px-5 focus:outline-none hover:bg-green-600 rounded">Apply Now</button>
+      </div>
+      <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="https://coredevsltd.com/Service/Asset/MobileApplicationDevelopment.jpeg">
+        </div>
+        <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">App Development Internship</h2>
+        <button class="flex mx-auto mt-6 text-white bg-green-500 border-0 py-2 px-5 focus:outline-none hover:bg-green-600 rounded">Apply Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOn8DbriioqMj7tDtHLNiQlWeERCGPCnWcWg&s">
+        </div>
+        <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Frontend Development</h2>
+        <button class="flex mx-auto mt-6 text-white bg-green-500 border-0 py-2 px-5 focus:outline-none hover:bg-green-600 rounded">Apply Now</button>
+      </div>
+      <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="https://i0.wp.com/heartdirected.com/wp-content/uploads/2023/10/graphic-designer.jpeg?resize=850%2C508&ssl=1">
+        </div>
+        <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Graphic Design</h2>
+        <button class="flex mx-auto mt-6 text-white bg-green-500 border-0 py-2 px-5 focus:outline-none hover:bg-green-600 rounded">Apply Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="https://acropolium.com/img/articles/enterprise-chatbot-development-guide/img01.jpg">
+        </div>
+        <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Chatbot Development</h2>
+        <button class="flex mx-auto mt-6 text-white bg-green-500 border-0 py-2 px-5 focus:outline-none hover:bg-green-600 rounded">Apply Now</button>
+      </div>
+      <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="https://talent500.com/blog/wp-content/uploads/sites/42/2023/05/AI-and-Machine-learning_-The-impact-on-Data-Science-in-2023.png">
+        </div>
+        <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">AI Data Science</h2>
+        <button class="flex mx-auto mt-6 text-white bg-green-500 border-0 py-2 px-5 focus:outline-none hover:bg-green-600 rounded">Apply Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center">
+    <button class="border border-green-500 bg-white text-green-500 px-6 py-2 rounded-full hover:bg-green-500 hover:text-white text-base font-bold">
+      Broswer More Intership
+    </button> 
+</div>
+</div>
+<br><br>
+<div class="flex justify-center">
+  <h3 class="text-black text-3xl font-bold">Our Blog</h3>
+</div>
+</div>
+<div class="flex justify-center">
+  <h1 class="text-black text-5xl font-bold">Recent Blog</h1> 
+</div>
+</section>
+<!-- 4th page -->
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col">
+      <div class="h-1 bg-gray-200 rounded overflow-hidden">
+        <div class="w-24 h-full bg-indigo-500"></div>
+      </div>
+
+    </div>
+    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="https://www.internee.pk/images/certificate.jpeg">
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Complete all of the task but didn't get certification yet?</h2>
+        <p class="text-base leading-relaxed mt-2">Drop us a quick email at issues@internee.pk with the subject Didn&apos;t get certification yet. Our team will swiftly resolve the matter, ensuring you get your recognition promptly.</p>
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="https://www.internee.pk/images/mentor.jpeg">
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Looking to make a meaningful impact in the community?🌟🎉</h2>
+        <p class="text-base leading-relaxed mt-2">Our goal is to make Pakistan as an IT Hub. For this, we need more hands-on developers and tech enthusiast who will lift the Pakistan's IT export into the top👨‍💻. Your guidance and help may create a significant impact on some one's career. 🚀.</p>
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="https://www.internee.pk/images/comunity.jpeg">
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Ready to Showcase Your Expertise? Follow These Simple Steps! 🌟</h2><p class="text-base leading-relaxed mt-2">To complete the process, send us all the task details via email at careers@internee.pk. This ensures that we have all the necessary information to validate your certification.</p>
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 5th page -->
+ <div>
+ <h1 class="font-bold text-black text-5xl text-center">What Students are saying about internee.pk</h1>
+</div>
+<br><br>
+<div>
+  <h3 class="text-center font-bold">Around 1500+ students have said how good internee.pk helped them in thier career 👨🏻‍🎓</h3>
+</div>
+<br><br>
+<div class="flex flex-wrap justify-center gap-6">
+  <div class="w-64 h-64 bg-white shadow-lg rounded-lg p-6 border flex flex-col justify-center items-center border-black">
+      <div class="flex text-yellow-500 text-xl">★★★★★</div>
+      <p class="text-gray-700 text-center mt-2 italic">
+          "This platform helps students boost their career with hands-on practice."
+      </p>
+      <h3 class="text-lg font-bold text-gray-900 text-center mt-3">Mirza Ali</h3>
+      <p class="text-sm text-gray-500 text-center">Pakistan, Karachi</p>
+  </div>
+  <div class="w-64 h-64 bg-white shadow-lg rounded-lg p-6 border flex flex-col justify-center items-center border-black">
+      <div class="flex text-yellow-500 text-xl">★★★★★</div>
+      <p class="text-gray-700 text-center mt-2 italic">
+          "Very helpful and well-structured internships."
+      </p>
+      <h3 class="text-lg font-bold text-gray-900 text-center mt-3">Ibad Salman</h3>
+      <p class="text-sm text-gray-500 text-center">Pakistan, Lahore</p>
+  </div>
+  <div class="w-64 h-64 bg-white shadow-lg rounded-lg p-6 border flex flex-col justify-center items-center border-black">
+      <div class="flex text-yellow-500 text-xl">★★★★★</div>
+      <p class="text-gray-700 text-center mt-2 italic">
+          "Thanks to internee.pk, I grew my skills and now I work as a Flutter Developer in a US company."
+      </p>
+      <h3 class="text-lg font-bold text-gray-900 text-center mt-3">Shahid Khan</h3>
+      <p class="text-sm text-gray-500 text-center">Pakistan, Peshawar</p>
+  </div>
+</div>
+</head>
+<!-- 7th page -->
+<body class="font-roboto">
+  <div class="flex flex-col lg:flex-row items-center p-8">
+    <div class="w-full lg:w-1/2 flex justify-center">
+      <img 
+        alt="portal interface" 
+        class="shadow-lg max-w-full rounded-lg" 
+        src="https://www.internee.pk/images/task.webp"/>
+    </div>
+    <div class="w-full lg:w-1/2 lg:pl-12 text-left">
+      <h2 class="text-black  text-2xl font-bold text-black ">Our own task portal</h2>
+      <h1 class="text-black text-4xl font-bold mb-2">Manage Project Via Own Task Portal </h1>
+      <p class="text-gray-600 mb-8">Welcome to internee.pk task portal. Where Tasks Transform Into Skills</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="flex items-start justify-end text-right">
+          <div class="mr-4 bg-green-100 p-4 rounded-full">
+            <i class="fas fa-project-diagram text-green-500"></i>
+          </div>
+          <div>
+            <h3 class="font-bold mb-2">Hands-on Projects</h3>
+            <p class="text-gray-600">
+              We believe in learning by doing. Dive into hands-on projects that simulate real-world scenarios.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start justify-end text-right">
+          <div class="mr-4 bg-green-100 p-4 rounded-full">
+            <i class="fas fa-user text-green-500"></i>
+          </div>
+          <div>
+            <h3 class="font-bold mb-2">How to Represent Yourself</h3>
+            <p class="text-gray-600">
+              More than just completing tasks, this platform helps you showcase your journey.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start justify-end text-right">
+          <div class="mr-4 bg-green-100 p-4 rounded-full">
+            <i class="fas fa-cogs text-green-500"></i>
+          </div>
+          <div>
+            <h3 class="font-bold mb-2">SDLC Techniques</h3>
+            <p class="text-gray-600">
+              Understand the Software Development Life Cycle (SDLC) and align with industry standards.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start justify-end text-right">
+          <div class="mr-4 bg-green-100 p-4 rounded-full">
+            <i class="fas fa-lightbulb text-green-500"></i>
+          </div>
+          <div>
+            <h3 class="font-bold mb-2">Easy to Understand</h3>
+            <p class="text-gray-600">
+              Our tasks are designed for a smooth learning experience for all levels.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <body class="font-roboto">
+    <div class="flex flex-col lg:flex-row-reverse items-center p-8">
+      <div class="w-full lg:w-1/2 flex lg:justify-end">
+        <img 
+          alt="portal interface" 
+          class="shadow-lg max-w-lg rounded-lg" 
+          src="https://www.internee.pk/images/lms.png"/>
+      </div>
+<div class="w-full lg:w-1/2 lg:pl-12 text-left">
+  <h2 class="text-black  text-2xl font-bold text-black">Our LMS</h2>
+  <h1 class="text-black text-4xl font-bold mb-2">Guided Tutorials in Learning Management System</h1>
+  <p class="text-gray-600 mb-8">Want to learn something but don't know what's the roadmap or your english is not too good? That's why we launch LMS for you.</p>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="flex items-start justify-end text-right">
+      <div class="mr-4 bg-green-100 p-4 rounded-full">
+        <i class="fas fa-project-diagram text-green-500"></i>
+      </div>
+      <div>
+        <h3 class="font-bold mb-2">Sell Courses</h3>
+        <p class="text-gray-600">
+          Sell Courses and Earn Are you an expert in your field? Share your knowledge on our LMS. Create and sell courses, or contribute as an instructor. Empower others on their learning journey while earning rewards for your expertise.
+        </p>
+      </div>
+    </div>
+
+    <div class="flex items-start justify-end text-right">
+      <div class="mr-4 bg-green-100 p-4 rounded-full">
+        <i class="fas fa-user text-green-500"></i>
+      </div>
+      <div>
+        <h3 class="font-bold mb-2">Certification</h3>
+        <p class="text-gray-600">
+          Certification Complete courses on our LMS and earn certifications that validate your expertise. Showcase your accomplishments to potential employers and stand out in a competitive landscape.
+        </p>
+      </div>
+    </div>
+<div class="flex items-start justify-end text-right">
+      <div class="mr-4 bg-green-100 p-4 rounded-full">
+        <i class="fas fa-cogs text-green-500"></i>
+      </div>
+      <div>
+        <h3 class="font-bold mb-2">Courses </h3>
+        <p class="text-gray-600">
+          Courses in Urdu Dive into the world of knowledge with our courses in Urdu. Breaking language barriers, Our LMS ensures that education is accessible and relatable for everyone. Learn, grow, and excel in a language that feels like home
+        </p>
+      </div>
+    </div>
+
+    <div class="flex items-start justify-end text-right">
+      <div class="mr-4 bg-green-100 p-4 rounded-full">
+        <i class="fas fa-lightbulb text-green-500"></i>
+      </div>
+      <div>
+        <h3 class="font-bold mb-2">Practice Exercises</h3>
+        <p class="text-gray-600" > Theory is just the beginning. Our LMS goes beyond by offering practical exercises that challenge and refine your skills. Apply your knowledge in real-world scenarios, solidifying your understanding and boosting your confidence
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <body class="font-roboto">
+    <div class="flex flex-col lg:flex-row-reverse items-center p-8">
+      <div class="w-full lg:w-1/2 lg:pl-12 text-left">
+        <h2 class="text-black font-bold text-2xl">Are you Tech Instructor or Content Creator?</h2>
+        <h1 class="text-black text-4xl font-bold mb-2">Create Courses In Local Language & Generate Income</h1>
+        <p class="text-gray-600 mb-8">Are you a professional want to start journey as Tech instuctor and content creater to some revenue</p>
+  
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="flex items-start text-left">
+            <div class="bg-green-100 p-4 rounded-full mr-4">
+              <i class="fas fa-project-diagram text-green-500 text-2xl"></i>
+            </div>
+            <div>
+              <h3 class="font-bold mb-2">Tutorials & Excersice s</h3>
+              <p class="text-gray-600">
+                Upload Tutorials & Excersice Transform your expertise into impactful learning materials. As an instructor on Internee.pk LMS, you can effortlessly upload tutorials and exercises, shaping the educational experience for countless learners.
+              </p>
+            </div>
+          </div>
+  
+          <div class="flex items-start text-left">
+            <div class="bg-green-100 p-4 rounded-full mr-4">
+              <i class="fas fa-user text-green-500 text-2xl"></i>
+            </div>
+            <div>
+              <h3 class="font-bold mb-2">Generate Revenue </h3>
+              <p class="text-gray-600">
+                Teach what you love and earn what you deserve. Internee.pk LMS offers instructors the opportunity to generate revenue. Monetize your expertise, reach a global audience, and make a meaningful income from your passion.
+              </p>
+            </div>
+          </div>
+  
+          <div class="flex items-start text-left">
+            <div class="bg-green-100 p-4 rounded-full mr-4">
+              <i class="fas fa-cogs text-green-500 text-2xl"></i>
+            </div>
+            <div>
+              <h3 class="font-bold mb-2">Instructor Identity</h3>
+              <p class="text-gray-600">
+                Internee.pk LMS provides a platform for instructors to build their brand. Showcase your skills, experience, and teaching style, creating a unique and recognizable identity in the world of online education.
+              </p>
+            </div>
+          </div>
+  
+          <div class="flex items-start text-left">
+            <div class="bg-green-100 p-4 rounded-full mr-4">
+              <i class="fas fa-lightbulb text-green-500 text-2xl"></i>
+            </div>
+            <div>
+              <h3 class="font-bold mb-2">Perfact Share</h3>
+              <p class="text-gray-600">
+                Perfact Share Ratio We believe in fair partnerships. we enjoy a perfect share ratio that ensures transparency and fairness. Your hard work deserves to be rewarded, and we make sure you get your share
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/2 flex justify-center">
+        <img 
+          alt="portal interface" 
+          class="shadow-lg max-w-full rounded-lg" 
+          src="https://www.internee.pk/images/instructor.png"/>
+      </div>
+    </div>
+    <footer class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap md:text-left text-center order-first">
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest font-bold text-green-500 text-2xl mb-3"> <img src="img/internee image.jpg" class="w-40 h-auto" alt=""></h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">The ultimate platform designed to turbocharge the IT sector in Pakistan</a>
+              </li>
+              <br>
+              <li>
+                <a class="text-green-600 hover:text-gray-800">Info@finternee.pk</a>
+              </li>
+              <br>
+              <li>
+                <a class="text-green-600 hover:text-gray-800">+92312-3023645</a>
+              </li>
+              <br>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">NIC Karachi, NED University</a>
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Company</h2>
+            <nav class="list-none mb-10">
+              <br>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">INTERSHIP</a>
+              </li>
+              <br>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">CONTACT</a>
+              </li>
+              <br>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">COMPANY</a>
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">HELP</h2>
+            <nav class="list-none mb-10">
+              <br>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">LMS</a>
+              </li>
+              <br>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">JOB PORTAL</a>
+              </li>
+              <br>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">TASK PORTAL</a>
+              </li>
+              <br>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SUBSCRIBE TO OUR NEWSLETTER</h2>
+            <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+              <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+                <label for="footer-field" class="leading-7 text-sm text-gray-600">Enter your email</label>
+                <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-green-500 focus:bg-transparent focus:ring-2 focus:ring-green-500 focus:border-green-500 text-base outline-none text-gren-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+              <button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex font-bold bg-white-500 border border-green-500  py-2 px-6 focus:outline-none hover:bg-green-600 rounded">SUBSCRIBE</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-100">
+        <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl font-bold text-green-500"></span>
+          </a>
+            <div class="w-full flex justify-center">
+  <p class="text-center text-gray-500 mt-4">© Copyright 2025, All Rights Reserved by Techviochats</p>
+</div>
+  <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-end">
+    <a class="text-black-500">
+      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+      </svg>
+    </a>
+    <a class="ml-3 text-black-500">
+      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+      </svg>
+    </a>
+    <a class="ml-3 text-black-500">
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+      </svg>
+    </a>
+    <a class="ml-3 text-black-500">
+      <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+        <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+      </svg>
+    </a>
+  </span>
+</div>
+
+        </div>
+      </div>
+    </footer>
+  </body>
+</body>
+</body>
+</html>
+
+   </body>
+</html>
+
